@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/tfe_semi_transparent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tfl2_logo" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_txtex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="opnTxtExt"
+        android:text="Text Extraction"
+        android:translationY="-30dp" />
+
+    <Button
+        android:id="@+id/btn_objdec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="opnObjDec"
+        android:text="Object Detection"
+        android:translationY="30dp" />
+
+</RelativeLayout>

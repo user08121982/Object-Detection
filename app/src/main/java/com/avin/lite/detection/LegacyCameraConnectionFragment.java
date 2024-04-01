@@ -36,7 +36,7 @@ import com.avin.lite.detection.customview.AutoFitTextureView;
 import java.io.IOException;
 import java.util.List;
 
-import com.avin.lite.detection.R;
+import com.avin.lite.R;
 
 import com.avin.lite.detection.env.ImageUtils;
 import com.avin.lite.detection.env.Logger;

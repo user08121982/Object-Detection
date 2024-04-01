@@ -38,7 +38,6 @@ import android.os.Trace;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
-import androidx.appcompat.widget.Toolbar;
 
 import android.util.Size;
 import android.view.Surface;
@@ -51,6 +50,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.avin.lite.R;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.nio.ByteBuffer;
@@ -98,9 +98,6 @@ public abstract class CameraActivity extends AppCompatActivity
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         setContentView(R.layout.tfe_od_activity_camera);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         if (hasPermission()) {
             setFragment();

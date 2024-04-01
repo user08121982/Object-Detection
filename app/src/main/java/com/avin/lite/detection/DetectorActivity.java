@@ -31,6 +31,7 @@ import android.util.Size;
 import android.util.TypedValue;
 import android.widget.Toast;
 
+import com.avin.lite.R;
 import com.avin.lite.detection.customview.OverlayView;
 import com.avin.lite.detection.tflite.Classifier;
 import com.avin.lite.detection.tflite.TFLiteObjectDetectionAPIModel;

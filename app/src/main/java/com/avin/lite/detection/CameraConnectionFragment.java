@@ -63,7 +63,7 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-import com.avin.lite.detection.R;
+import com.avin.lite.R;
 
 import com.avin.lite.detection.env.Logger;
 

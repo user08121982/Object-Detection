@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.avin.lite.detection">
+    package="com.avin.lite">
 
     <uses-sdk />
 
@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme.ObjectDetection">
 
         <activity
-            android:name="com.avin.lite.detection.DetectorActivity"
+            android:name="com.avin.lite.HomeActivity"
             android:label="@string/tfe_od_app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -25,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".detection.DetectorActivity" />
 
     </application>
 </manifest>
