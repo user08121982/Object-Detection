@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme.ObjectDetection">
 
         <activity
-            android:name=".HomeActivity"
+            android:name=".splash"
             android:label="@string/tfe_od_app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -26,6 +26,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".detection.DetectorActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".texttrac.MainActivity" />
 
     </application>
 </manifest>
