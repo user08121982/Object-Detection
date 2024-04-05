@@ -1,29 +1,38 @@
-apply plugin: 'com.android.application'
-apply plugin: 'de.undercouch.download'
+plugins {
+    id 'com.android.application'
+    id 'de.undercouch.download'
+}
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion '33.0.0'
+    namespace 'com.avin.intelliscan'
+    compileSdk 34
+
     defaultConfig {
-        applicationId "com.avin.lite"
-        minSdkVersion 21
-        targetSdkVersion 33
+        applicationId "com.avin.intelliscan"
+        minSdk 21
+        targetSdk 34
         versionCode 1
         versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     aaptOptions {
         noCompress "tflite"
     }
+
     compileOptions {
-        sourceCompatibility = '1.8'
-        targetCompatibility = '1.8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
+
     lintOptions {
         abortOnError false
     }
@@ -40,16 +49,16 @@ project.ext.TMP_DIR   = project.buildDir.toString() + '/downloads'
 apply from:'download_model.gradle'
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
-    implementation 'com.google.android.material:material:1.6.0'
-    implementation('org.tensorflow:tensorflow-lite:0.0.0-nightly') { changing = true }
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test:rules:1.1.1'
-    androidTestImplementation 'com.google.truth:truth:1.0.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'com.github.dhaval2404:imagepicker:1.8'
+    implementation('org.tensorflow:tensorflow-lite:0.0.0-nightly') { changing = true }
+
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
 
     // To recognize Latin script
     implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.0'

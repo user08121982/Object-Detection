@@ -1,11 +1,12 @@
-package com.avin.lite;
+package com.avin.intelliscan;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.avin.lite.detection.DetectorActivity;
+import com.avin.intelliscan.detection.DetectorActivity;
+import com.avin.intelliscan.texttrac.MainActivity;
 
 public class HomeActivity extends Activity {
     @Override
@@ -15,7 +16,7 @@ public class HomeActivity extends Activity {
     }
 
     public void opnTxtExt(View view) {
-
+        startActivity(new Intent(this, MainActivity.class));
     }
 
     public void opnObjDec(View view) {

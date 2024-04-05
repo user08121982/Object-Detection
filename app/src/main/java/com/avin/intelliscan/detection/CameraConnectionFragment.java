@@ -1,4 +1,4 @@
-package com.avin.lite.detection;
+package com.avin.intelliscan.detection;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -37,7 +37,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.avin.lite.detection.customview.AutoFitTextureView;
+import com.avin.intelliscan.detection.customview.AutoFitTextureView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -47,9 +47,9 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
-import com.avin.lite.R;
+import com.avin.intelliscan.R;
 
-import com.avin.lite.detection.env.Logger;
+import com.avin.intelliscan.detection.env.Logger;
 
 @SuppressLint("ValidFragment")
 public class CameraConnectionFragment extends Fragment {

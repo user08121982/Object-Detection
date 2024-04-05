@@ -13,7 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-package com.avin.lite.detection.tflite;
+package com.avin.intelliscan.detection.tflite;
 
 import android.graphics.Bitmap;
 import android.graphics.RectF;

@@ -13,7 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-package com.avin.lite.detection.tracking;
+package com.avin.intelliscan.detection.tracking;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -30,10 +30,10 @@ import android.util.TypedValue;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-import com.avin.lite.detection.env.BorderedText;
-import com.avin.lite.detection.env.ImageUtils;
-import com.avin.lite.detection.env.Logger;
-import com.avin.lite.detection.tflite.Classifier.Recognition;
+import com.avin.intelliscan.detection.env.BorderedText;
+import com.avin.intelliscan.detection.env.ImageUtils;
+import com.avin.intelliscan.detection.env.Logger;
+import com.avin.intelliscan.detection.tflite.Classifier.Recognition;
 
 /** A tracker that handles non-max suppression and matches existing objects to new detections. */
 public class MultiBoxTracker {

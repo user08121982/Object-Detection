@@ -1,4 +1,4 @@
-package com.avin.lite;
+package com.avin.intelliscan;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -13,8 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-import com.avin.lite.texttrac.MainActivity;
 
 public class splash extends AppCompatActivity {
 
@@ -41,13 +39,10 @@ public class splash extends AppCompatActivity {
         own1.setAnimation(bottomAnim);
         own2.setAnimation(bottomAnim);
 
-        new Handler().postDelayed (new Runnable() {
-            @Override
-            public void run() {
-                    Intent intent = new Intent(splash.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler().postDelayed (() -> {
+                Intent intent = new Intent(splash.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
         },4000);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

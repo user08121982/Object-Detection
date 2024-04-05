@@ -1,4 +1,4 @@
-package com.avin.lite.detection;
+package com.avin.intelliscan.detection;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -15,19 +15,19 @@ import android.util.Size;
 import android.util.TypedValue;
 import android.widget.Toast;
 
-import com.avin.lite.R;
-import com.avin.lite.detection.customview.OverlayView;
-import com.avin.lite.detection.tflite.Classifier;
-import com.avin.lite.detection.tflite.TFLiteObjectDetectionAPIModel;
-import com.avin.lite.detection.tracking.MultiBoxTracker;
-import com.avin.lite.detection.env.BorderedText;
-import com.avin.lite.detection.env.ImageUtils;
+import com.avin.intelliscan.R;
+import com.avin.intelliscan.detection.customview.OverlayView;
+import com.avin.intelliscan.detection.tflite.Classifier;
+import com.avin.intelliscan.detection.tflite.TFLiteObjectDetectionAPIModel;
+import com.avin.intelliscan.detection.tracking.MultiBoxTracker;
+import com.avin.intelliscan.detection.env.BorderedText;
+import com.avin.intelliscan.detection.env.ImageUtils;
 
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.avin.lite.detection.env.Logger;
+import com.avin.intelliscan.detection.env.Logger;
 
 /**
  * An activity that uses a TensorFlowMultiBoxDetector and ObjectTracker to detect and then track

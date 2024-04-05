@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.avin.lite.detection.customview;
+package com.avin.intelliscan.detection.customview;
 
 import android.content.Context;
 import android.util.AttributeSet;

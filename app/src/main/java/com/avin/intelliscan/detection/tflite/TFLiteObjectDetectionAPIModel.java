@@ -13,7 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-package com.avin.lite.detection.tflite;
+package com.avin.intelliscan.detection.tflite;
 
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
@@ -35,7 +35,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 import org.tensorflow.lite.Interpreter;
-import com.avin.lite.detection.env.Logger;
+import com.avin.intelliscan.detection.env.Logger;
 
 /**
  * Wrapper for frozen detection models trained using the Tensorflow Object Detection API:

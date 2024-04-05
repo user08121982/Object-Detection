@@ -1,4 +1,4 @@
-package com.avin.lite.detection;
+package com.avin.intelliscan.detection;
 
 import android.app.Fragment;
 import android.graphics.SurfaceTexture;
@@ -15,15 +15,15 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.avin.lite.detection.customview.AutoFitTextureView;
+import com.avin.intelliscan.detection.customview.AutoFitTextureView;
 
 import java.io.IOException;
 import java.util.List;
 
-import com.avin.lite.R;
+import com.avin.intelliscan.R;
 
-import com.avin.lite.detection.env.ImageUtils;
-import com.avin.lite.detection.env.Logger;
+import com.avin.intelliscan.detection.env.ImageUtils;
+import com.avin.intelliscan.detection.env.Logger;
 
 public class LegacyCameraConnectionFragment extends Fragment {
   private static final Logger LOGGER = new Logger();

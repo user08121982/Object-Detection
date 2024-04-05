@@ -1,4 +1,4 @@
-package com.avin.lite.detection;
+package com.avin.intelliscan.detection;
 
 import android.Manifest;
 import android.app.Fragment;
@@ -34,13 +34,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.avin.lite.R;
+import com.avin.intelliscan.R;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.nio.ByteBuffer;
 
-import com.avin.lite.detection.env.ImageUtils;
-import com.avin.lite.detection.env.Logger;
+import com.avin.intelliscan.detection.env.ImageUtils;
+import com.avin.intelliscan.detection.env.Logger;
 
 public abstract class CameraActivity extends AppCompatActivity
         implements OnImageAvailableListener,

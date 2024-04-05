@@ -2,11 +2,9 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -83,7 +81,6 @@
             app:tint="@color/white" />
 
         <TextView
-            android:id="@+id/textView3"
             android:layout_width="60dp"
             android:layout_height="16dp"
             android:text="Capture"
@@ -96,7 +93,6 @@
             app:layout_constraintVertical_bias="0.909" />
 
         <TextView
-            android:id="@+id/textView3"
             android:layout_width="46dp"
             android:layout_height="16dp"
             android:text="Clear"
@@ -109,7 +105,6 @@
             app:layout_constraintVertical_bias="0.909" />
 
         <TextView
-            android:id="@+id/textView3"
             android:layout_width="46dp"
             android:layout_height="16dp"
             android:text="Copy"
