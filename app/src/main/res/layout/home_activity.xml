@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/tfe_color_accent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/tfe_semi_transparent">
+        android:layout_height="66dp"
+        android:background="#AEA6CE">
 
         <ImageView
             android:layout_width="match_parent"
@@ -15,22 +16,47 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_txtex"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:onClick="opnTxtExt"
-        android:text="Text Extraction"
-        android:translationY="-30dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp">
 
-    <Button
-        android:id="@+id/btn_objdec"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:onClick="opnObjDec"
-        android:text="Object Detection"
-        android:translationY="30dp" />
+        <Button
+            android:id="@+id/btn_txtex"
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="#F34580"
+            android:onClick="opnTxtExt"
+            android:text="Text Extraction"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_objdec"
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="#F34580"
+            android:onClick="opnObjDec"
+            android:text="Object Detection"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="318dp"
+        android:src="@drawable/fav1" />
 
 </RelativeLayout>
