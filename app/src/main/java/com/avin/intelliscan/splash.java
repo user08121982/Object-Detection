@@ -31,19 +31,19 @@ public class splash extends AppCompatActivity {
         own1 = findViewById(R.id.ownone);
         own2 = findViewById(R.id.owntwo);
 
-        topAnim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
-        bottomAnim = AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
+        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
+        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
 
         logo.setAnimation(topAnim);
         name.setAnimation(bottomAnim);
         own1.setAnimation(bottomAnim);
         own2.setAnimation(bottomAnim);
 
-        new Handler().postDelayed (() -> {
-                Intent intent = new Intent(splash.this, HomeActivity.class);
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(splash.this, HomeActivity.class);
             startActivity(intent);
             finish();
-        },4000);
+        }, 4000);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
